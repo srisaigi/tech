@@ -1,0 +1,26 @@
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Locale;
+import java.util.Date;
+public class SimpleDateFormatExample2{
+    public static void main(String args[]){
+        Date date = new Date();
+        System.out.println("Date format change by technolamror");
+        SimpleDateFormat formatter = new SimpleDateFormat("MM/dd/yyyy");
+        String str = formatter.format(date);
+        System.out.println("Date Format with MM/dd/yyyy : "+ str);
+        formatter = new SimpleDateFormat("dd-M-yyyy hh:mm:ss : "+str);
+        str = formatter.format(date);
+        System.out.println("Date Format with dd-M-yyyy hh:mm:ss : "+ str);
+        formatter = new SimpleDateFormat("dd MMMM yyyy");
+        str = formatter.format(date);
+        System.out.println("Date Format with dd MMMM yyyy : "+ str);
+        formatter = new SimpleDateFormat("dd MMMM yyyy zzzz");
+        str = formatter.format(date);
+        System.out.println("Date Format with dd MMMM yyyy zzzz : "+ str);
+        formatter = new SimpleDateFormat("E, dd MMM yyyy HH:mm:ss z");
+        str = formatter.format(date);
+        System.out.println("Date Format with E, dd MMM yyyy HH:mm:ss z : "+ str);
+
+    }
+}
