@@ -1,0 +1,22 @@
+class Language{
+    Language(){
+        System.out.println("System called");
+    }
+    String name;
+    Language(String t){
+         name = t;
+    }
+    public static void main(String args[]){
+        Language cpp = new Language();
+        Language java = new Language("Java");
+        cpp.setname("Cpp");
+        java.getname();
+        cpp.getname();
+        }
+        void setname(String t){
+            name = t;
+        }
+        void getname(){
+            System.out.println("Language " + name);
+        }
+}
