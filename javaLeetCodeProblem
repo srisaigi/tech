@@ -1,0 +1,14 @@
+import java.util.ArrayList;
+import java.util.StringTokenizer;
+class Solution {
+    public int lengthOfLastWord(String s) {
+       // BufferReader br = new BufferReader("input.txt");
+       StringTokenizer st = new StringTokenizer(s," ");
+       ArrayList<String> t = new ArrayList<>();
+       String n ="";
+       while(st.hasMoreTokens()){
+        n = st.nextToken();
+       }
+         return n.length();
+}
+    }
